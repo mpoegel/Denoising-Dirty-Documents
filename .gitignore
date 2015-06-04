@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+*.Rproj
+*.html
+
+train/*
+test/*
+train_cleaned/*
