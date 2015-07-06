@@ -9,7 +9,6 @@ import os
 from PIL import Image
 import numpy as np
 import pandas as pd
-from functools import reduce
 
 
 def image_df_from_array(image_array, image_number):
@@ -44,5 +43,5 @@ def process_images(test_images_dir, submission_file, num_files=None):
 
 # ------------------------------------------------------------------------------
 if (__name__ == '__main__'):
-	with open('no_cleaning_benchmark.csv', 'w') as submission_file:
+	with open('./submissions/no_cleaning_benchmark.csv', 'w') as submission_file:
 		process_images('./test/', submission_file)
